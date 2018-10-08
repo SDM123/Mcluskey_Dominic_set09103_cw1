@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/account/", methods=['POST','GET'])
 def account():
-  if request.method == 'POST'
+  if request.method == 'POST':
    f = request.files['datafile']
    f.save('static/uploads/upload.png')
    return "File Uploaded"
