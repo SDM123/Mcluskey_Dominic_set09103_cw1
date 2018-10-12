@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>HELLO</h1>
-<h2>Napier</h2>
+<h2><Napier</h2>
 <p>Demonstrating a flask app with templates for html generation and bootstrap
 for a little bit of style</p>
 </body>
