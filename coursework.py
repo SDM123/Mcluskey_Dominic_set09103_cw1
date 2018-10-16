@@ -37,6 +37,14 @@ def formable():
 def events():
    return render_template('cwTemplates/cwevents.html')
 
+@app.route('/Events/CountryList')
+def countrylist():
+   return render_template('cwTemplates/cwnationlist.html')
+
+@app.route('/Events/General')
+def general():
+   return render_template('cwTemplates/cwgeneral.html')
+
 @app.route('/Developer')
 def Developer():
    return render_template('cwTemplates/cwdeveloper.html')
