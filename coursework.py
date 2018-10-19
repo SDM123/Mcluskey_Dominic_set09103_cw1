@@ -41,6 +41,46 @@ def events():
 def countrylist():
    return render_template('cwTemplates/cwnationlist.html')
 
+@app.route('/Events/France')
+def eventsfrance():
+   return render_template('cwTemplates/cweventsfrance.html')
+
+@app.route('/Events/Scotland')
+def eventsscotland():
+   return render_template('cwTemplates/cweventsscotland.html')
+
+@app.route('/Events/Andalusia')
+def eventsandalusia():
+   return render_template('cwTemplates/cweventsandalusia.html')
+
+@app.route('/Events/Kongo')
+def eventskongo():
+   return render_template('cwTemplates/cweventskongo.html')
+
+@app.route('/Events/Mali')
+def eventsmali():
+   return render_template('cwTemplates/cweventsmali.html')
+
+@app.route('/Events/Ming')
+def eventsming():
+   return render_template('cwTemplates/cweventsming.html')
+
+@app.route('/Events/Japan')
+def eventsjapan():
+   return render_template('cwTemplates/cweventsjapan.html')
+
+@app.route('/Events/Huron')
+def eventshuron():
+   return render_template('cwTemplates/cweventshuron.html')
+
+@app.route('/Events/Aztec')
+def eventsaztec():
+   return render_template('cwTemplates/cweventsaztec.html')
+
+@app.route('/Events/Australia')
+def eventsaustralia():
+   return render_template('cwTemplates/cweventsaustralia.html')
+
 @app.route('/Events/General')
 def general():
    return render_template('cwTemplates/cwgeneral.html')

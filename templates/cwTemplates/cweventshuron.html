@@ -1,0 +1,62 @@
+<html>
+<head>
+   <title>Bootstrap Demonstration</title>
+   <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+   <style>
+      body{
+         padding-top: 50px;
+         background-color: lightblue;
+      }
+   </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed"
+         data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+         aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Europa Universalis 4 info</a>
+         </div>
+         <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/Events">Events</a></li>
+            <li class="active"><a href="/Events/CountryList">Country Specific</a></li>
+            <li><a href="/Events/General">General</a></li>
+         </ul>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container">
+       <h1>Huron</h1>
+       <h2>Starting American minor power</h2>
+       <p class="lead">Huron doesn't have any specifically unique events but it does have events related to being an American navite tribe.</p>
+       <p></p>
+       <p></p>
+       <p class="lead">Frozen Lands</p>
+       <p>Trigger conditions are that Conquest of Paradise is active, government is native council, capital doesn't have arctic climate, the flag natives_adapted_arctic, a colony has at least 100 settlers and doesn't have more than 500 settlers. Month must be October and not May.</p>
+       <p>Two event paths can be chosen</p>
+       <p>1# "Our way of life is to adapt. Send others to teach them." Gains you 200 population in colony, country loses 1 stability and set the flag "natives_ adapted_arctic</p>
+       <p>2# "Let them leave if they so wish." Lose 100 population in the colony.</p>
+       <p></p>
+       <p></p>
+       <p class="lead">Our New Home in the North</p>
+       <p>Trigger conditions are that Conquest of Paradise is active. Government is native council. Doesn't own at least 2 non-colony provinces, Doesn't have at least 1 colony, neighbouring country has capital with arctic climate. Doesn't have flag natives_adapted_arctic. Month is October and isn't May.</p>
+        </p>2 event paths to choose.</p>
+       <p>#1 "In our past home, we were wise, but here, they are wiser." Gain modifier "Pleased" towards our country. Set flag natives_adapted_arctic and lose 10 prestige.</p>
+       <p>#2 "We learn better from the land itself." Gain modifier "Learning from the land" for a year. Lose 2000 manpower and gain flag natives_adapted_arctic.</p>
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

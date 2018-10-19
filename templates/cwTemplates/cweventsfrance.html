@@ -1,0 +1,62 @@
+<html>
+<head>
+   <title>Bootstrap Demonstration</title>
+   <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+   <style>
+      body{
+         padding-top: 50px;
+         background-color: lightblue;
+      }
+   </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed"
+         data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+         aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Europa Universalis 4 info</a>
+         </div>
+         <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/Events">Events</a></li>
+            <li class="active"><a href="/Events/CountryList">Country Specific</a></li>
+            <li><a href="/Events/General">General</a></li>
+         </ul>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container">
+       <h1>Aztec</h1>
+       <h2>Starting American minor power</h2>
+       <p class="lead">The Aztecs have many events based on their religious need to perform blood sacrifices and the encounters with colonising nations.</p>
+       <p></p>
+       <p></p>
+       <p class="lead">The Great Pyramid of Tenochtitlan</p>
+       <p>Trigger conditions are that the event has not fired before. Country is Aztec, owns the province Mexico, has 3 or more provinces and year is less than 1450.</p>
+       <p>Two event paths can be chosen</p>
+       <p>1# "All our subjects must contribute to the pyramid." In every non capital province 80% chance of getting a modifier that gives -0.02 monthly autonomy or 20% chance of noble rebels rise up in revolt. Triggers reaction to pyramid in 120 days.
+       <p>2# "Let us use our own resources for this project." Lose 75 admin power and diplo power. Mexico gets modifier that gives +1 yearly prestige for rest of the game.</p>
+       <p></p>
+       <p></p>
+       <p class="lead">Reactions to Pyramid Project</p>
+       <p>Trigger conditions are you chose the option "All our subjects must serve" in the Great Pyramid of Tenochtitlan event. 3 options are available.</p>
+       <p>#1 If at least 2 provinces have modifier "Contributing to the great temple" then lose 25 admin, 25 diplo, gain 10 prestige and 25 legitimacy. Mexico gains the modifier "Great Temple of Tenochtitlan" for the rest of the campaign giving +1 yearly prestige. Every province with the modifier "Contributing to the Great Temple" loses it.</p>
+       <p>#2 This option fires if exactly 1 province has the modifier "Contributing to the Great Temple" Lose 35 admin, 35 diplo, gain 5 prestige and 5 legitimacy. Mexico gains the buff "Great Temple of Tenochtitlan" for the rest of the campaign giving +1 yearly prestige. All provinces lose the "Contributing to the Great Temple" modifier.</p>
+       <p>#3 This option fires if no provinces contributed to the great temple, lose 75 admin and 75 diplo. Mexico gains the modifier "Great Temple of Tenochtitlan" which gives +1 yearly prestige for the rest of the campaign.</p>
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
