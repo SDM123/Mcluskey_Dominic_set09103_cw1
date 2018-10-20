@@ -93,5 +93,9 @@ def Developer():
 def Strategy():
    return render_template('cwTemplates/cwstrategy.html')
 
+@app.errorhandler(404)
+def page_not_found(error):
+   return render_template('cwTemplates/cwerror.html')
+
 if __name__ == "__main__":
    app.run(host='0.0.0.0', debug=True)
